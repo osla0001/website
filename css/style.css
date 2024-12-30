@@ -1,0 +1,125 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 5px;
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+html {
+  text-wrap: pretty;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px;
+}
+
+/* Skrifttyper */
+@font-face {
+  font-family: "Champignon";
+  src: url("champignon-webfont.woff2") format("woff2"), url("champignon-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Champignon_alt_swash";
+  src: url("champignonaltswash-webfont.woff2") format("woff2"), url("champignonaltswash-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helveticaultra_compressed";
+  src: url("../fonts/Helvetica-UltraCompressed-Regular/helvetica_ultra_compressed-webfont.woff2") format("woff2"), url("../fonts/Helvetica-UltraCompressed-Regular/helvetica_ultra_compressed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ballet-regular {
+  font-family: "Ballet", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Ballet", serif;
+  font-size: 5rem;
+  color: lightgray;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Champignon", serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2.7rem;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  line-height: 3.6;
+}
+
+h4 {
+  font-family: "Arial_narrowbold", sans-serif;
+}
+
+p {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+a {
+  font-family: "helveticaultra_compressed";
+  text-transform: uppercase;
+  font-weight: 1000;
+}
+
+/* Styling */
+.titles {
+  display: grid;
+}
+
+.title {
+  grid-area: 1 / 1;
+  text-align: center;
+}
+
+.textarea {
+  margin: -50px auto 60px;
+  max-width: 90%;
+}
+
+#themes {
+  background-image: url(../imgs/dune.JPG);
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+  aspect-ratio: 3/2;
+}

@@ -1,0 +1,150 @@
+/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 75px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #2548c7;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100vw;
+    /* padding-top: 25vh; */
+    padding-bottom: 100vh;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 0 8px 0 8px;
+    /* flex: 1 1 auto;  */
+  }
+
+  nav.active .menu a {
+    font-size: 23cqw;
+    letter-spacing: -2px;
+    line-height: 0.9;
+  }
+}
+
+/* Footer */
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 120px;
+  padding: 50px 0 100px 0;
+  background-color: #ffffff;
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+
+footer li,
+footer a {
+  text-decoration: none;
+  list-style: none;
+  font-family: "helveticaultra_compressed";
+  font-size: 25px;
+  color: #333333;
+}
+
+footer li {
+  margin-left: 5px;
+}
+
+.footer_1st,
+.footer_2nd {
+  display: flex;
+  flex-direction: row;
+}
