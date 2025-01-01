@@ -148,3 +148,20 @@ footer li {
   display: flex;
   flex-direction: row;
 }
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+}
+
+.school {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
