@@ -163,6 +163,13 @@ footer li {
   flex-direction: row;
 }
 
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80ch;
+  margin: 0 auto;
+}
+
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 10px 1fr;
@@ -190,5 +197,6 @@ footer li {
 
 iframe {
   height: auto;
+  width: 100%;
   aspect-ratio: 16/9;
 }

@@ -42,6 +42,7 @@ html {
   margin: 0 auto;
   margin-top: 20px;
   max-width: 90ch;
+  border: 1px solid lightgrey;
 }
 
 /* Skrifttyper */
@@ -305,4 +306,8 @@ a:hover {
     font-size: 4rem;
     text-align: left;
   }
+}
+
+.textarea .no_border {
+  border: 0;
 }
