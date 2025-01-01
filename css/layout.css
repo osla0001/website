@@ -175,11 +175,11 @@ footer li {
 .video-container {
   display: grid;
   place-items: center;
-  margin-top: 10px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 iframe {
-  max-width: 65%; /* Gør det responsivt */
-  height: auto; /* Bevarer korrekt højde-bredde-forhold */
+  height: auto;
   aspect-ratio: 16/9;
 }
