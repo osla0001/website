@@ -153,15 +153,14 @@ a {
 }
 
 .my_face img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: auto;
   object-fit: cover;
 }
 
 .card_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: max-content 1fr;
 }
 
 .flex_row {
@@ -211,4 +210,45 @@ a {
 
 .work div:nth-child(6) {
   margin-top: 128px;
+}
+
+.block {
+  display: none;
+}
+
+@media screen and (min-width: 710px) {
+  .my_face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card_grid {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+    grid-template-rows: 400px;
+  }
+
+  .my_name h3 {
+    font-size: 5cqw;
+  }
+
+  .my_info h1 {
+    font-size: 6.8rem;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .block2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .my_info h1 {
+    font-size: 4rem;
+    text-align: left;
+  }
 }
