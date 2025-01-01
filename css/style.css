@@ -32,6 +32,18 @@ html {
   margin: 0 auto;
 }
 
+.textarea h4 {
+  max-width: 78ch;
+  margin: 0 auto;
+  text-shadow: -10px 1px 14px #e80000, 10px 1px 14px #e80000;
+}
+
+.textarea img {
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width: 90ch;
+}
+
 /* Skrifttyper */
 @font-face {
   font-family: "Champignon";
@@ -114,6 +126,24 @@ a {
   font-family: "helveticaultra_compressed";
   text-transform: uppercase;
   font-weight: 1000;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2548c7;
+}
+
+.textarea a {
+  font-family: "Inter";
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-transform: none;
+  color: #2548c7;
+  transition: 0.3s;
+}
+
+.textarea a:hover {
+  opacity: 0.6;
 }
 
 /* Styling */
