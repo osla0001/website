@@ -170,3 +170,16 @@ footer li {
   flex-direction: column;
   gap: 20px;
 }
+
+/* Youtubevideo */
+.video-container {
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+}
+
+iframe {
+  max-width: 65%; /* Gør det responsivt */
+  height: auto; /* Bevarer korrekt højde-bredde-forhold */
+  aspect-ratio: 16/9;
+}

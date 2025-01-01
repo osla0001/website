@@ -27,6 +27,11 @@ html {
   padding: 8px;
 }
 
+.content p {
+  max-width: 78ch;
+  margin: 0 auto;
+}
+
 /* Skrifttyper */
 @font-face {
   font-family: "Champignon";
