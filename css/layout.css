@@ -16,6 +16,10 @@ header {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
+.logo {
+  transition: 0.3s;
+}
+
 .logo img {
   width: 75px;
   height: 50px;
@@ -120,6 +124,11 @@ nav.active .menu a {
   nav.active .menu a {
     font-size: 23cqw;
   }
+}
+
+.logo:hover {
+  scale: 1.2;
+  transition: 0.3s;
 }
 
 /* Footer */
