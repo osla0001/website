@@ -14,6 +14,7 @@ header {
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
 }
 
 .logo {
@@ -120,12 +121,6 @@ nav.active .menu a {
   line-height: 0.9;
 }
 
-@media screen and (max-width: 710px) {
-  nav.active .menu a {
-    font-size: 23cqw;
-  }
-}
-
 .logo:hover {
   scale: 1.2;
   transition: 0.3s;
@@ -199,4 +194,28 @@ iframe {
   height: auto;
   width: 100%;
   aspect-ratio: 16/9;
+}
+
+@media screen and (max-width: 710px) {
+  nav.active .menu a {
+    font-size: 23cqw;
+  }
+
+  .grid_1-1 {
+    display: block;
+  }
+}
+
+#themes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 90ch;
+  margin: 0 auto;
+  width: 100%;
+  background-image: url(../imgs/dune.JPG);
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
+  aspect-ratio: 5/2;
+  align-items: center;
 }

@@ -32,10 +32,17 @@ html {
   margin: 0 auto;
 }
 
-.textarea h4 {
+.textarea h4,
+#themes h4 {
   max-width: 78ch;
   margin: 0 auto;
   text-shadow: -10px 1px 14px #e80000, 10px 1px 14px #e80000;
+}
+
+#themes h4 {
+  position: relative;
+  text-align: center;
+  bottom: 40px;
 }
 
 .textarea img {
@@ -162,12 +169,8 @@ a:hover {
   max-width: 90%;
 }
 
-#themes {
-  background-image: url(../imgs/dune.JPG);
-  background-size: cover;
-  overflow: hidden;
-  height: 100%;
-  aspect-ratio: 3/2;
+.gif1:hover {
+  filter: drop-shadow(0 0 20px white);
 }
 
 /* Om mig */
@@ -192,6 +195,10 @@ a:hover {
   width: 150px;
   height: auto;
   object-fit: cover;
+}
+
+.my_name {
+  padding-left: 10px;
 }
 
 .card_grid {
@@ -250,6 +257,15 @@ a:hover {
 
 .block {
   display: none;
+}
+
+.scale {
+  transition: 0.3s;
+}
+
+.scale:hover {
+  transition: 0.3s;
+  scale: 1.2;
 }
 
 @media screen and (min-width: 740px) {
