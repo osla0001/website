@@ -137,7 +137,8 @@ a {
   transition: color 0.3s;
 }
 
-a:hover {
+footer a:hover,
+header a:hover {
   color: #2548c7;
 }
 
@@ -169,10 +170,6 @@ a:hover {
   max-width: 90%;
 }
 
-.gif1:hover {
-  filter: drop-shadow(0 0 20px white);
-}
-
 /* Om mig */
 .id_card {
   height: 100%;
@@ -183,7 +180,9 @@ a:hover {
   margin: 20px auto 0 auto;
   width: 90%;
   height: 500px;
-  background-color: #fdfcfb;
+  background-image: url(../imgs/plastic.png);
+  background-size: cover;
+  background-color: #fcf7f1;
   border-radius: 25px;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
   display: grid;
@@ -326,4 +325,18 @@ a:hover {
 
 .textarea .no_border {
   border: 0;
+}
+
+#themes a {
+  text-decoration: none;
+  color: black;
+}
+
+.folder {
+  transition: 0.3s;
+}
+
+.folder:hover {
+  transition: 0.3s;
+  scale: 1.05;
 }

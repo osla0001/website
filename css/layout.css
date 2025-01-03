@@ -212,10 +212,10 @@ iframe {
   max-width: 90ch;
   margin: 0 auto;
   width: 100%;
-  background-image: url(../imgs/dune.JPG);
+  /* background-image: url(../imgs/dune.JPG); */
   background-size: cover;
   overflow: hidden;
   height: 100%;
-  aspect-ratio: 5/2;
+  aspect-ratio: 8/2;
   align-items: center;
 }

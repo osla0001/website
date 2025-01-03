@@ -5,11 +5,11 @@ const gifs = document.querySelectorAll(".gif1");
 gifs.forEach((gif) => {
   // Når musen holdes over elementet, skift billedet til GIF
   gif.addEventListener("mouseenter", function () {
-    gif.src = "../imgs/folder2.gif"; // Skift til GIF
+    gif.src = "../imgs/folder2.webp"; // Skift til GIF
   });
 
   // Når musen fjernes fra elementet, skift billedet tilbage til PNG
   gif.addEventListener("mouseleave", function () {
-    gif.src = "../imgs/folder1.png"; // Skift tilbage til PNG
+    gif.src = "../imgs/folder1.webp"; // Skift tilbage til PNG
   });
 });
