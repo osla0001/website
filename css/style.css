@@ -180,7 +180,7 @@ header a:hover {
   margin: 20px auto 0 auto;
   width: 90%;
   height: 500px;
-  background-image: url(../imgs/plastic.png);
+  background-image: url(../imgs/plastic.webp);
   background-size: cover;
   background-color: #fcf7f1;
   border-radius: 25px;
@@ -220,6 +220,7 @@ header a:hover {
 .my_info h1 {
   color: black;
   font-size: 3.2rem;
+  text-shadow: 1px 1px 40px rgb(95, 61, 36);
 }
 
 .align_left {
@@ -330,6 +331,7 @@ header a:hover {
 #themes a {
   text-decoration: none;
   color: black;
+  text-transform: none;
 }
 
 .folder {
