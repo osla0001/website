@@ -21,37 +21,6 @@ html {
   text-wrap: pretty;
 }
 
-.content {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 8px;
-}
-
-.content p {
-  max-width: 78ch;
-  margin: 0 auto;
-}
-
-.textarea h4,
-#themes h4 {
-  max-width: 78ch;
-  margin: 0 auto;
-  text-shadow: -10px 1px 14px #e80000, 10px 1px 14px #e80000;
-}
-
-#themes h4 {
-  position: relative;
-  text-align: center;
-  bottom: 40px;
-}
-
-.textarea img {
-  margin: 0 auto;
-  margin-top: 20px;
-  max-width: 90ch;
-  border: 1px solid lightgrey;
-}
-
 /* Skrifttyper */
 @font-face {
   font-family: "Champignon";
@@ -96,6 +65,12 @@ h1 {
   text-align: center;
 }
 
+.my_info h1 {
+  color: black;
+  font-size: 3.2rem;
+  text-shadow: 1px 1px 40px rgb(95, 61, 36);
+}
+
 h2 {
   font-family: "Champignon", serif;
   font-weight: 400;
@@ -117,6 +92,19 @@ h4 {
   font-family: "Arial_narrowbold", sans-serif;
 }
 
+.textarea h4,
+#themes h4 {
+  max-width: 78ch;
+  margin: 0 auto;
+  text-shadow: -10px 1px 14px #e80000, 10px 1px 14px #e80000;
+}
+
+#themes h4 {
+  position: relative;
+  text-align: center;
+  bottom: 40px;
+}
+
 h5 {
   font-family: Arial, sans-serif;
   font-weight: bolder;
@@ -128,6 +116,11 @@ p {
   font-family: "Inter";
   font-size: 0.9rem;
   font-weight: 300;
+}
+
+.content p {
+  max-width: 78ch;
+  margin: 0 auto;
 }
 
 a {
@@ -217,20 +210,7 @@ header a:hover {
   justify-content: space-between;
 }
 
-.my_info h1 {
-  color: black;
-  font-size: 3.2rem;
-  text-shadow: 1px 1px 40px rgb(95, 61, 36);
-}
-
-.align_left {
-  text-align: left;
-}
-
-.align_right {
-  text-align: right;
-}
-
+/* Linje */
 .container {
   margin: 0 auto;
 }
@@ -241,7 +221,6 @@ header a:hover {
 }
 
 /* Kasser til CV */
-
 .school :nth-child(4) {
   grid-row: 4;
   margin-top: 625px;
@@ -257,15 +236,6 @@ header a:hover {
 
 .block {
   display: none;
-}
-
-.scale {
-  transition: 0.3s;
-}
-
-.scale:hover {
-  transition: 0.3s;
-  scale: 1.2;
 }
 
 @media screen and (min-width: 740px) {
