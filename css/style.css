@@ -45,14 +45,12 @@ html {
 
 .ballet-regular {
   font-family: "Ballet", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
 .inter-regular {
   font-family: "Inter", serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -135,7 +133,9 @@ header a:hover {
   color: #2548c7;
 }
 
-.textarea a {
+.textarea a,
+.forwards,
+.backwards {
   font-family: "Inter";
   font-size: 0.9rem;
   font-weight: 300;
@@ -161,6 +161,25 @@ header a:hover {
 .textarea {
   margin: -40px auto 5px;
   max-width: 90%;
+}
+
+.textarea .no_border {
+  border: 0;
+}
+
+.no_style a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Forside */
+.folder {
+  transition: 0.3s;
+}
+
+.folder:hover {
+  transition: 0.3s;
+  scale: 1.05;
 }
 
 /* Om mig */
@@ -208,6 +227,27 @@ header a:hover {
 .card_grid_2 {
   display: flex;
   justify-content: space-between;
+}
+
+.forwards,
+.forwards a {
+  text-align: right;
+  color: grey;
+}
+
+.backwards,
+.backwards a {
+  text-align: left;
+  color: grey;
+}
+
+#projects {
+  margin-top: 25px;
+}
+
+.instagram {
+  aspect-ratio: 5/7;
+  place-items: center;
 }
 
 /* Linje */
@@ -294,21 +334,20 @@ header a:hover {
   }
 }
 
-.textarea .no_border {
-  border: 0;
+@media screen and (max-width: 710px) {
+  .instagram {
+    aspect-ratio: 5/5.5;
+    place-items: center;
+  }
+
+  .max_width {
+    width: 540px;
+    padding-bottom: 20px;
+  }
 }
 
 #themes a {
   text-decoration: none;
   color: black;
   text-transform: none;
-}
-
-.folder {
-  transition: 0.3s;
-}
-
-.folder:hover {
-  transition: 0.3s;
-  scale: 1.05;
 }

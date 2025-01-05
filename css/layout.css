@@ -179,6 +179,7 @@ footer li {
   grid-template-columns: 1fr 1fr;
   max-width: 80ch;
   margin: 0 auto;
+  gap: 5px;
 }
 
 .grid_1-1-1 {
@@ -221,7 +222,6 @@ footer li {
 }
 /* Youtubevideo */
 .video-container {
-  display: grid;
   place-items: center;
   max-width: 700px;
   margin: 0 auto;
@@ -231,6 +231,12 @@ iframe {
   height: auto;
   width: 100%;
   aspect-ratio: 16/9;
+  border: 0;
+}
+
+.figma {
+  max-width: 90ch;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 710px) {
