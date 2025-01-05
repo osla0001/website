@@ -329,7 +329,7 @@ header a:hover {
 
 @media screen and (max-width: 1020px) {
   .my_info h1 {
-    font-size: 4rem;
+    font-size: 3.4rem;
     text-align: left;
   }
 }
@@ -341,8 +341,15 @@ header a:hover {
   }
 
   .max_width {
-    width: 540px;
+    width: 98%;
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .my_info h1 {
+    font-size: 14cqw;
+    text-align: left;
   }
 }
 
