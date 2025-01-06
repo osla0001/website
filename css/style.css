@@ -250,8 +250,9 @@ header a:hover {
   place-items: center;
 }
 
-#hero_section img {
-  filter: contrast(1.1);
+#hero_section {
+  background-image: url(../imgs/hero_morph_background2.webp);
+  background-size: cover;
 }
 
 /* Linje */
