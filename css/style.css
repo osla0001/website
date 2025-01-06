@@ -250,6 +250,10 @@ header a:hover {
   place-items: center;
 }
 
+#hero_section img {
+  filter: contrast(1.1);
+}
+
 /* Linje */
 .container {
   margin: 0 auto;
